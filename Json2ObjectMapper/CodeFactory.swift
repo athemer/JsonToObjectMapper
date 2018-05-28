@@ -120,7 +120,7 @@ class StructDefine {
         
         let body = bodyLines.joined(separator: "\n")
         
-        let imports = "import Foundation \nimport RealSwift \nimport ObjectMapper\n\n"
+        let imports = "import Foundation \nimport RealmSwift \nimport ObjectMapper\n\n"
         
         // class SomeClass: someParentClass { body }
         return imports + classDefine + " " + body

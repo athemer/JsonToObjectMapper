@@ -69,7 +69,7 @@ class ModelFactory: ClassFactory  {
                 
                 var property: Properties?
                 
-                if dateFormatter.date(from: value.string ?? "") != nil {
+                if dateFormatter.date(from: value.string ?? "") != nil || key.contains("date") {
                     
                     property = Properties(name: key,
                                           type: value.type.optionalType(key: key + modelSubfix),
